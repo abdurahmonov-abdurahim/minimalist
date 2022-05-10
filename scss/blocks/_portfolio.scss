@@ -1,0 +1,63 @@
+.portfolios{
+  padding: 30px 0 50px 0;
+
+
+  &__list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    flex-direction: column;
+  }
+
+  &__item{
+    display: flex;
+    // justify-content: space-between;
+  }
+
+  &__item + &__item{
+    margin: 80px 0;
+  }
+
+  &__item:nth-child(even){
+    flex-direction: row-reverse;
+  }
+
+  &__text--wrapper{
+    max-width: 350px;
+    width: 100%;
+    margin: 0 95px 0 125px;
+    padding: 103px 0;
+    border-top: 1px solid #DDDDDE;
+    border-bottom: 1px solid #DDDDDE;
+  }
+
+  &__title{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 28px;
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+  }
+
+  &__desc{
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    width: 100%;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323D;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    padding-bottom: 24px;
+  }
+}

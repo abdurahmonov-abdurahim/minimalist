@@ -1,0 +1,22 @@
+.header{
+  padding: 64px 0;
+
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-link{
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  &__logo--link:hover{
+    opacity: 0.8;
+  }
+
+  &__logo--link:active{
+    opacity: 0.4;
+  }
+}
