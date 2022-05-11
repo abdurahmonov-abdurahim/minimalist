@@ -597,6 +597,193 @@ img {
           flex-grow: 1;
 }
 
+.portfolios {
+  padding: 30px 0 50px 0;
+}
+
+.portfolios__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolios__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolios__item + .portfolios__item {
+  margin: 80px 0;
+}
+
+.portfolios__item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.portfolios__text--wrapper {
+  max-width: 350px;
+  width: 100%;
+  margin-left: 125px;
+  padding: 103px 0;
+  border-top: 1px solid #DDDDDE;
+  border-bottom: 1px solid #DDDDDE;
+}
+
+.portfolios__text--wrapper-reverse {
+  margin: 0;
+  margin-right: 125px;
+}
+
+.portfolios__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 28px;
+  font-family: 'Ibarra Real Nova';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+
+.portfolios__desc {
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+  width: 100%;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323D;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 993px) {
+  .portfolios__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolios__item:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    flex-direction: column;
+  }
+  .portfolios__item + .portfolios__item {
+    margin: 0;
+    margin-top: 72px;
+  }
+  .portfolios__text--wrapper {
+    margin: 0;
+    max-width: 540px;
+    width: 100%;
+    padding: 0;
+    padding: 25px 0;
+    margin-top: 32px;
+  }
+  .portfolios__text--wrapper-reverse {
+    margin: 0;
+  }
+  .portfolios__desc {
+    max-width: 540px;
+    width: 100%;
+  }
+}
+
+.contact {
+  padding: 100px 0;
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__title {
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+  width: 100%;
+  font-family: 'Ibarra Real Nova';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+
+.contact__line {
+  display: inline-block;
+  height: 1px;
+  max-width: 534px;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: #DDDDDE;
+  margin: 0 32px;
+}
+
+.contact__link {
+  margin: 0;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 994px) {
+  .contact__line {
+    max-width: 250px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .contact {
+    padding: 30px 0;
+  }
+  .contact__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__line {
+    display: none;
+  }
+  .contact__link {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
 .footer {
   background-color: #33323D;
   margin-top: 50px;
