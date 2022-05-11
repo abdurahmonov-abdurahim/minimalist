@@ -1,9 +1,9 @@
 .project {
   padding-top: 115px;
+  padding-bottom: 64px;
 
   &__container {
     display: flex;
-    // justify-content: space-between;
   }
 
   &__left {
@@ -60,7 +60,7 @@
 
   &__right {
     max-width: 635px;
-    margin-left: auto;
+    margin-left: 125px;
 
     &-heading {
       margin: 0;
@@ -98,6 +98,27 @@
         margin-bottom: 32px;
       }
 
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 770px) {
+
+  .project {
+    padding-top: 40px;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__left {
+      max-width: 689px;
+    }
+
+    &__right {
+      margin-left: 0;
     }
 
   }

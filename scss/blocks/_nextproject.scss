@@ -1,0 +1,147 @@
+.nextproject {
+  padding-bottom: 115px;
+
+  &__container {
+    background-image: url(../images/nextproject.png);
+    background-size: 1110px 132px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    &-wrapper {
+      margin-left: 32px;
+    }
+
+    &-desc {
+      margin: 0;
+      font-family: 'Ibarra Real Nova';
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.285714px;
+      color: #33323D;
+
+      &-small {
+        margin: 0;
+        font-family: 'Public Sans';
+        font-size: 16px;
+        line-height: 30px;
+        color: #33323D;
+        opacity: 0.5;
+      }
+    }
+
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+
+      &-wrapper {
+        margin-right: 32px;
+        order: -1;
+      }
+
+      &-desc {
+        margin: 0;
+        font-family: 'Ibarra Real Nova';
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -0.285714px;
+        color: #33323D;
+
+        &-small {
+          margin: 0;
+          font-family: 'Public Sans';
+          font-size: 16px;
+          line-height: 30px;
+          color: #33323D;
+          opacity: 0.5;
+        }
+      }
+
+      }
+
+      &__line {
+        background: white;
+        opacity: 0.15;
+        height: 1px;
+        margin-bottom: 32px;
+
+        &-bottom {
+          background: white;
+          opacity: 0.15;
+          height: 1px;
+          margin-bottom: 32px;
+          margin-top: 32px;
+        }
+      }
+
+    }
+
+    .sas {
+      padding-top: 150px;
+    }
+
+    @media only screen and (max-width: 480px  ) {
+
+      .nextproject {
+
+        &__left {
+          display: flex;
+          flex-direction: column;
+
+          &-wrapper {
+            margin-left: 0;
+          }
+
+          & > img {
+            align-self: flex-start;
+            margin-bottom: 16px;
+          }
+        }
+
+        &__right {
+          display: flex;
+          flex-direction: column-reverse;
+
+          &-wrapper {
+            margin-right: 0;
+          }
+
+          & > img {
+            align-self: flex-end;
+            margin-bottom: 16px;
+          }
+        }
+
+      }
+
+    }
+
+    @media only screen and (max-width: 360px  ) {
+
+      .nextproject {
+
+        &__left-desc {
+          font-size: 28px;
+          line-height: 34px;
+        }
+
+        &__right-desc {
+          font-size: 28px;
+          line-height: 34px;
+        }
+
+      }
+
+    }
